@@ -1,18 +1,15 @@
 import './App.css';
-import Records from './smartphons.json';
+import { BrowserRouter } from 'react-router-dom';
+import Pages from './pages/Pages';
 
 
 function App() {
   return (
     <div className="App">
-      {Records.map(record=>{
-        return(
-          <div>
-            <img src={record.img}/>
-            {record.id}
-          </div>
-        )
-      })}
+       <BrowserRouter>
+        <Pages/>
+       </BrowserRouter>
+      
     </div>
   );
 }
