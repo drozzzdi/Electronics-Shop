@@ -6,24 +6,28 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.header-container .logo {
+.header-container .textdecor {
+  text-decoration: none;
+}
+
+.header-container .textdecor .logo {
   display: flex;
   padding-top: 20px;
   padding-left: 5px;
 }
 
-.header-container .logo h1 {
+.header-container .textdecor .logo h1 {
   color: yellow;
 }
 
-.header-container .logo h1 span {
+.header-container .textdecor .logo h1 span {
   color: white;
 }
 
-.header-container .logo .logo-yellow-wrapper {
+.header-container .textdecor .logo .logo-yellow-wrapper {
   background-color: yellow;
   margin-left: 5px;
   border-radius: 20%;
@@ -31,9 +35,10 @@
   height: 40px;
 }
 
-.header-container .logo .logo-yellow-wrapper .logo-icon {
+.header-container .textdecor .logo .logo-yellow-wrapper .logo-icon {
   font-size: 34px;
   margin-left: 7px;
+  color: black;
 }
 
 .header-container form {
@@ -56,11 +61,12 @@
   top: 33px;
   font-size: 20px;
   color: #313131;
+  cursor: pointer;
 }
 
 .header-container .basket {
   display: flex;
-  padding: 20px 70px;
+  padding: 30px 70px;
 }
 
 .header-container .basket .basket-icon {

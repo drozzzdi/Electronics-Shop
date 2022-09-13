@@ -1,0 +1,33 @@
+.category-container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-bottom: 30px;
+    .category-button{
+        background-color: white;
+        border: none;
+        font-size: 23px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 1px 12px;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .category-button-active{
+        background-color: black;
+        color:yellow;
+        border: none;
+        font-size: 23px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 1px 12px;
+        border-radius: 10px;
+    }
+
+    .category-button:hover{
+        background-color: black;
+        color:yellow;
+    }
+}
