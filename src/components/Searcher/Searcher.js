@@ -14,6 +14,7 @@ function Searcher() {
     const formHandler=(e)=>{
         e.preventDefault();
         navigate('/searched/'+input);
+        setInput('')
     }
 
   return (

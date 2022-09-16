@@ -1,5 +1,6 @@
 import React from 'react';
 import Records from '../../smartphons.json';
+import {Link} from 'react-router-dom';
 import './Products.css';
 
 function Products() {
@@ -8,10 +9,12 @@ function Products() {
         {Records.map(record=>{
         return(
           <div key={record.id} className="wrapp-product">
+            <Link className='link-product' to={"/category/"+record.id}>
             <img src={record.img}/>
             <h3>{record.name}</h3>
             <p>{record.description}</p>
             <p className='price-product'>{record.price.toFixed(2)}zł</p>
+            </Link>
             <button>dodaj do koszyka</button>
           </div>
         )

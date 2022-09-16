@@ -22,15 +22,16 @@ function Searched() {
         {Records.map(record=>{for(let i=0;i<searchedProducts.length;i++){
             if(searchedProducts[i]==record.id){
                 return(
-                    <Link className='link-product' to={"/product/"+record.id}>
+                    
                         <div key={record.id} className="wrapp-product">
-                        <img src={"../"+record.img}/>
-                        <h3>{record.name}</h3>
-                        <p>{record.description}</p>
-                        <p className='price-product'>{record.price.toFixed(2)}zł</p>
-                        <button>dodaj do koszyka</button>
-          </div>
-                    </Link>
+                            <Link className='link-product' to={"/category/"+record.id}>
+                                <img src={"../"+record.img}/>
+                                <h3>{record.name}</h3>
+                                <p>{record.description}</p>
+                                <p className='price-product'>{record.price.toFixed(2)}zł</p>
+                            </Link>
+                            <button>dodaj do koszyka</button>
+                        </div>
                 )
             }
         }})}

@@ -1,0 +1,77 @@
+.smartphone-container{
+    margin-bottom: 50px;
+    margin-left: 10px;
+    .wrapp-smartphone{
+        h2{
+            text-align: center;
+            margin: 60px 0;
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            gap:100px;
+            .img-smartphone{
+                img{
+                    max-width: 350px;
+                }
+                p{
+                    text-align: center;
+                    font-size: 21px;
+                    margin: 10px 0;
+                }
+                button{
+                    cursor: pointer;
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px;
+                    font-size: 17px;
+                    margin-left: 95px;
+                    margin-top: 20px;
+                }
+                button:hover{
+                    color: yellow;
+                }
+            }
+            .tech-smartphone{
+                max-width: 400px;
+                h4{
+                    text-align: center;
+                    margin-top: 40px;
+                }
+                .tabel{
+                    display: flex;
+                    justify-content: center;
+                    
+                    .tabel-left{
+                        ul{
+                            width: 200px;
+                            li{
+                                
+                                list-style-type: none;
+                                text-align: right;
+                                margin-top: 10px;
+                                padding-right: 10px;
+                                border-bottom: 1px solid rgba(41, 32, 32, 0.39);
+                            }
+                        }
+                    }
+                    .tabel-right{
+                        border-left: 1px solid rgba(41, 32, 32, 0.318);;
+                        ul{
+                            width: 200px;
+                            li{
+                                list-style-type: none;
+                                margin-top: 10px;
+                                padding-left: 10px;
+                                border-bottom: 1px solid rgba(41, 32, 32, 0.236);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -4,17 +4,18 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 30px;
-    .link-product{
-        text-decoration: none;
-        color: black;
-        .wrapp-product{
-            max-width: 320px;
-            height: 550px;
-            padding: 30px;
-            border-radius: 20px;
-            position: relative;
-            cursor: pointer;
-            margin-bottom: 50px;
+    
+    .wrapp-product{
+        max-width: 320px;
+        height: 550px;
+        padding: 30px;
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 50px;
+        .link-product{
+            text-decoration: none;
+            color: black;
             img{
                 max-width: 90%;
             }
@@ -32,21 +33,21 @@
                 font-size: 22px;
                 margin-left: 15px;
             }
-            button{
-                cursor: pointer;
-                background-color: black;
-                color: white;
-                border: none;
-                border-radius: 20px;
-                padding: 10px;
-                font-size: 17px;
-                position: absolute;
-                left:24%;
-                bottom: 5%;
-            }
-            button:hover{
-                color: yellow;
-            }
+        }
+        button{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 17px;
+            position: absolute;
+            left:24%;
+            bottom: 5%;
+        }
+        button:hover{
+            color: yellow;
         }
     }
     .wrapp-product:hover{
