@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Online electronics store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The website contains a product search engine,\navigation searching for products by brand, \the possibility of adding products to the basket.
+
+## Tech stack
+
+HTML,\
+Css,\
+React,\
+React Router,\
+Redux,\
+Npm,
+
+This project was bootstrapped with Create React App.
 
 ## Available Scripts
 
