@@ -2,10 +2,13 @@ import {useEffect, useState} from 'react';
 import {Link, useParams} from 'react-router-dom';
 import Records from "../smartphons.json";
 import './searched.css';
+import {useDispatch} from 'react-redux';
+import {increment,commission} from '../actions';
 
 function Searched() {
     const [searchedProducts,setSearchedProducts]=useState([]);
     let params=useParams();
+    const dispatch=useDispatch();
 
     const getSearched=async(search)=>{
         let products=[];
@@ -30,7 +33,10 @@ function Searched() {
                                 <p>{record.description}</p>
                                 <p className='price-product'>{record.price.toFixed(2)}zł</p>
                             </Link>
-                            <button>dodaj do koszyka</button>
+                            <button onClick={()=>{
+                            dispatch(increment(record.price))
+                            dispatch(commission(record.id))
+                            }}>dodaj do koszyka</button>
                         </div>
                 )
             }

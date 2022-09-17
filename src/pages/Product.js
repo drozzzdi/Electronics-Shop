@@ -2,10 +2,13 @@ import {useEffect, useState} from 'react';
 import {Link, useParams} from 'react-router-dom';
 import Records from "../smartphons.json";
 import './product.css';
+import {useDispatch} from 'react-redux';
+import {increment,commission} from '../actions';
 
 function Product() {
   const[smartphon,setSmartphon]=useState();
   let params=useParams();
+  const dispatch=useDispatch();
 
   const getCategory=async(model)=>{
     setSmartphon(model)
@@ -26,7 +29,10 @@ function Product() {
               <div className='img-smartphone'>
                 <img src={"../"+record.img}/>
                 <p className='price-product'>{record.price.toFixed(2)}zł</p>
-                <button>dodaj do koszyka</button>
+                <button onClick={()=>{
+                  dispatch(increment(record.price))
+                  dispatch(commission(record.id))
+                }}>dodaj do koszyka</button>
               </div>
               <div className='tech-smartphone'>
                 <p>{record.description}</p>

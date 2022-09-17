@@ -3,10 +3,14 @@ import {useState,useEffect} from 'react';
 import Records from '../../smartphons.json';
 import './Category.css';
 import {NavLink} from 'react-router-dom';
+import {useSelector, useDispatch} from 'react-redux';
+import {active} from '../../actions';
 
 function Category() {
   const[productCategory, setProductCategory]=useState([]);
   const[activeClass, setActiveClass]=useState(0);
+  const choise=useSelector(state=>state.choise);
+  const dispatch=useDispatch();
 
   useEffect(()=>{
     let productsList=new Set(Records.map(record=>record.category));
@@ -15,9 +19,9 @@ function Category() {
   },[])
  
   const categoryHandler=(e)=>{
-    //console.log(e.target.innerText);
-    const activeIndex=e.target.dataset.set;
-    setActiveClass(activeIndex);
+    //const activeIndex=e.target.dataset.set;
+   //setActiveClass(activeIndex);
+    dispatch(active(e.target.dataset.set))
   }
 
   return (
@@ -25,7 +29,7 @@ function Category() {
       {productCategory.map((product,index)=>{
         return(
           <NavLink key={index} className='category-link'to={'/product/'+product}>
-              <button onClick={categoryHandler} key={index} data-set={index} className={index==activeClass? 'category-button-active' : 'category-button'}>{product}</button>
+              <button onClick={categoryHandler} key={index} data-set={index} className={index==choise? 'category-button-active' : 'category-button'}>{product}</button>
           </NavLink>
         )
       })}

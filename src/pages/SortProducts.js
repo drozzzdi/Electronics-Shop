@@ -1,11 +1,14 @@
 import React,{useEffect, useState} from "react";
 import {Link, useParams} from 'react-router-dom';
 import Records from "../smartphons.json";
+import {useDispatch} from 'react-redux';
+import {increment,commission} from '../actions';
 import './sort.css';
 
 function SortProducts() {
     const [category, setCategory]=useState([]);
     let params=useParams();
+    const dispatch=useDispatch();
 
     const getCategory=async(brand)=>{
         let products=[];
@@ -30,7 +33,10 @@ function SortProducts() {
                                 <p>{record.description}</p>
                                 <p className='price-product'>{record.price.toFixed(2)}zł</p>
                             </Link>
-                            <button>dodaj do koszyka</button>
+                            <button onClick={()=>{
+                                dispatch(increment(record.price))
+                                dispatch(commission(record.id))
+                            }}>dodaj do koszyka</button>
                         </div>
                    
                 )

@@ -67,6 +67,7 @@
 .header-container .basket {
   display: flex;
   padding: 30px 70px;
+  cursor: pointer;
 }
 
 .header-container .basket .basket-icon {
