@@ -8,7 +8,6 @@ import {active} from '../../actions';
 
 function Category() {
   const[productCategory, setProductCategory]=useState([]);
-  const[activeClass, setActiveClass]=useState(0);
   const choise=useSelector(state=>state.choise);
   const dispatch=useDispatch();
 
@@ -19,8 +18,6 @@ function Category() {
   },[])
  
   const categoryHandler=(e)=>{
-    //const activeIndex=e.target.dataset.set;
-   //setActiveClass(activeIndex);
     dispatch(active(e.target.dataset.set))
   }
 

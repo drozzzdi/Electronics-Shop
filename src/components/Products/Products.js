@@ -8,7 +8,7 @@ import {increment,commission} from '../../actions';
 function Products() {
   const dispatch=useDispatch();
   const orders=useSelector(state=>state.orders);
-  console.log(orders)
+  
   return (
     <div className='container-products'>
         {Records.map(record=>{

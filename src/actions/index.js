@@ -22,4 +22,17 @@ export const commission=(nr)=>{
         payload:nr
     }
 }
+export const uncommis=(nr)=>{
+    return{
+        type:'UNCOMMIS',
+        payload:nr
+    }
+}
+
+export const cancel=(nr)=>{
+    return{
+        type:'CANCEL',
+        payload:nr
+    }
+}
 
