@@ -35,4 +35,10 @@ export const cancel=(nr)=>{
         payload:nr
     }
 }
+export const salle=(nr)=>{
+    return{
+        type:'SALLE',
+        payload:nr
+    }
+}
 

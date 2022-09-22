@@ -1,12 +1,17 @@
 import {useSelector, useDispatch} from 'react-redux';
-import {increment,cancel,decrement,commission,uncommis} from '../actions';
+import Modal from './Modal';
+import {increment,cancel,decrement,commission,uncommis,salle} from '../actions';
 import {useState,useEffect} from 'react';
 import Records from '../smartphons.json';
 import './basket.css';
 
 function Basket() {
     const[products,setProducts]=useState([]);
+    const [input,setInput]=useState('');
+    const[openModal, setOpenModal]=useState(false)
     const orders=useSelector(state=>state.orders);
+    const counter=useSelector(state=>state.counter);
+    const cutPrice=useSelector(state=>state.cut);
     const dispatch=useDispatch();
     
     useEffect(()=>{
@@ -26,30 +31,46 @@ function Basket() {
                 quantity.push(product);
                 return(
                     <div className='card-wrapper' key={record.name}>
-                    <p>{record.name}</p>
-                    <p>{record.price+' zł'}</p>
-                    <div className='quantity'>
-                    <button onClick={()=>{
-                                dispatch(increment(record.price))
-                                dispatch(commission(record.id))
-                            }}>+</button>
-                    <div>{product}</div>
-                    <button onClick={()=>{
-                                dispatch(decrement(record.price))
-                                dispatch(uncommis(record.id))
-                                dispatch(cancel(-1))
-                            }}>-</button>
+                        <p className='product-name'>{record.name}</p>
+                        <p className='product-price'>{record.price+' zł'}</p>
+                        <div className='quantity'>
+                        <button className='increment-button' onClick={()=>{
+                                    dispatch(increment(record.price))
+                                    dispatch(commission(record.id))
+                                }}>+</button>
+                        <div className='quantity-product'>{product}</div>
+                        <button className='decrement-button' onClick={()=>{
+                                    dispatch(decrement(record.price))
+                                    dispatch(uncommis(record.id))
+                                    dispatch(cancel(-1))
+                                }}>-</button>
+                        </div>
+                        <p className='product-sum'>{product*record.price+' zł'}</p>
+                        <button className='remove-product' onClick={()=>{
+                                    dispatch(cancel(record.id))
+                                    dispatch(decrement(product*record.price))
+                        }}>Usuń</button>
                     </div>
-                    <p>{product*record.price+' zł'}</p>
-                    <button onClick={()=>{
-                                dispatch(cancel(record.id))
-                                dispatch(decrement(product*record.price))
-                               }}>Usuń</button>
-                </div>
                 )
-                
-            }}})}
-       
+            }}})
+            }
+            <div className='basket-summary'>
+                <div className='cut-price'>
+                <input className='cutprice-input' 
+                    placeholder='kod zniżkowy' 
+                    onChange={(e)=>setInput(e.target.value)} 
+                    type="text" 
+                    value={input} ></input>
+                <button className='cutprice-button' onClick={()=>{if(input=='DN78T002'&&cutPrice==='true'){ dispatch(salle('false')); dispatch(decrement(200))}}}>Gotowe!</button>
+                </div>
+                <div className='summary-price'>Koszt: {counter} zł</div>
+                <button className='summary-button' onClick={()=> setOpenModal(true)}>Zapłać</button>
+
+            </div>
+            
+        <Modal 
+        open={openModal}
+        onClose={() => setOpenModal(false)}/>
     </div>
   )
 }

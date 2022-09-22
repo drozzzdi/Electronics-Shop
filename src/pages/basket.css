@@ -8,6 +8,109 @@
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 
+.container-basket .card-wrapper .product-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container-basket .card-wrapper .product-price {
+  font-size: 16px;
+}
+
 .container-basket .card-wrapper .quantity {
   display: flex;
+}
+
+.container-basket .card-wrapper .quantity .increment-button {
+  width: 20px;
+  background-color: white;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.container-basket .card-wrapper .quantity .quantity-product {
+  background-color: #f4f1ed;
+  width: 20px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.container-basket .card-wrapper .quantity .decrement-button {
+  width: 20px;
+  background-color: white;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.container-basket .card-wrapper .product-sum {
+  font-size: 16px;
+}
+
+.container-basket .card-wrapper .remove-product {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.container-basket .basket-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-right: 10%;
+  margin-top: 7%;
+  height: 150px;
+}
+
+.container-basket .basket-summary .cut-price .cutprice-input {
+  height: 23px;
+  border: 1px solid gray;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  cursor: pointer;
+  text-align: right;
+  padding-right: 7px;
+  outline: none;
+}
+
+.container-basket .basket-summary .cut-price .cutprice-button {
+  height: 23px;
+  padding: 0px 7px;
+  border: 1px solid gray;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left: none;
+  cursor: pointer;
+  color: white;
+  background-color: gray;
+}
+
+.container-basket .basket-summary .cut-price .cutprice-button:hover {
+  color: yellow;
+  background-color: black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.container-basket .basket-summary .summary-price {
+  font-size: 16px;
+}
+
+.container-basket .basket-summary .summary-button {
+  padding: 6px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-basket .basket-summary .summary-button:hover {
+  color: yellow;
 }
