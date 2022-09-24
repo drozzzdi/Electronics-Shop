@@ -19,6 +19,16 @@
                     font-size: 21px;
                     margin: 10px 0;
                 }
+                .price-cross{
+                    text-decoration: line-through;
+                    font-size: 14px;
+                }
+                .price-cut{
+                    color: green;
+                }
+                .disapear{
+                    display: none;
+                }
                 button{
                     cursor: pointer;
                     background-color: black;

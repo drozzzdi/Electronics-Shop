@@ -21,6 +21,20 @@
   color: black;
 }
 
+.container-products .wrapp-product .link-product .disapear {
+  display: none;
+}
+
+.container-products .wrapp-product .link-product .sale {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  background-color: black;
+  color: yellow;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .container-products .wrapp-product .link-product h3 {
   cursor: pointer;
   text-align: center;
@@ -41,6 +55,19 @@
 .container-products .wrapp-product .link-product .price-product {
   font-size: 22px;
   margin-left: 15px;
+}
+
+.container-products .wrapp-product .link-product .price-cross {
+  text-decoration: line-through;
+  font-size: 14px;
+  text-align: start;
+  margin-left: 30px;
+  padding-bottom: 0px;
+}
+
+.container-products .wrapp-product .link-product .price-cut {
+  font-size: 22px;
+  color: green;
 }
 
 .container-products .wrapp-product button {

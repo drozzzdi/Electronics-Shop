@@ -8,7 +8,7 @@ import './basket.css';
 function Basket() {
     const[products,setProducts]=useState([]);
     const [input,setInput]=useState('');
-    const[openModal, setOpenModal]=useState(false)
+    const[openModal, setOpenModal]=useState(false);
     const orders=useSelector(state=>state.orders);
     const counter=useSelector(state=>state.counter);
     const cutPrice=useSelector(state=>state.cut);
@@ -32,23 +32,23 @@ function Basket() {
                 return(
                     <div className='card-wrapper' key={record.name}>
                         <p className='product-name'>{record.name}</p>
-                        <p className='product-price'>{record.price+' zł'}</p>
+                        <p className='product-price'>{record.sale?record.price-record.sale:record.price+' zł'}</p>
                         <div className='quantity'>
                         <button className='increment-button' onClick={()=>{
-                                    dispatch(increment(record.price))
+                                    dispatch(increment(record.sale?record.price-record.sale:record.price))
                                     dispatch(commission(record.id))
                                 }}>+</button>
                         <div className='quantity-product'>{product}</div>
                         <button className='decrement-button' onClick={()=>{
-                                    dispatch(decrement(record.price))
+                                    dispatch(decrement(record.sale?record.price-record.sale:record.price))
                                     dispatch(uncommis(record.id))
                                     dispatch(cancel(-1))
                                 }}>-</button>
                         </div>
-                        <p className='product-sum'>{product*record.price+' zł'}</p>
+                        <p className='product-sum'>{product*(record.sale?record.price-record.sale:record.price)+' zł'}</p>
                         <button className='remove-product' onClick={()=>{
                                     dispatch(cancel(record.id))
-                                    dispatch(decrement(product*record.price))
+                                    dispatch(decrement(product*(record.sale?record.price-record.sale:record.price)))
                         }}>Usuń</button>
                     </div>
                 )

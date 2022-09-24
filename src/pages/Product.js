@@ -28,9 +28,10 @@ function Product() {
             <div className='flex'>
               <div className='img-smartphone'>
                 <img src={"../"+record.img}/>
-                <p className='price-product'>{record.price.toFixed(2)}zł</p>
+                <p className={record.sale?'price-cross':'price-product'}>{record.price.toFixed(2)}zł</p>
+                <p className={record.sale?'price-cut':'disapear'}>{(record.price-record.cut).toFixed(2)}zł</p>
                 <button onClick={()=>{
-                  dispatch(increment(record.price))
+                  dispatch(increment(record.sale?record.price-record.sale:record.price))
                   dispatch(commission(record.id))
                 }}>dodaj do koszyka</button>
               </div>

@@ -29,12 +29,14 @@ function SortProducts() {
                         <div key={record.id} className="wrapp-product">
                             <Link className='link-product' to={"/category/"+record.id}>
                                 <img src={"../"+record.img}/>
+                                <div className={record.sale?'sale':'disapear'}>Promocja</div>
                                 <h3>{record.name}</h3>
                                 <p>{record.description}</p>
-                                <p className='price-product'>{record.price.toFixed(2)}zł</p>
+                                <p className={record.sale?'price-cross':'price-product'}>{record.price.toFixed(2)}zł</p>
+                                <p className={record.sale?'price-cut':'disapear'}>{(record.price-record.cut).toFixed(2)}zł</p>
                             </Link>
                             <button onClick={()=>{
-                                dispatch(increment(record.price))
+                                dispatch(increment(record.sale?record.price-record.sale:record.price))
                                 dispatch(commission(record.id))
                             }}>dodaj do koszyka</button>
                         </div>
@@ -49,11 +51,17 @@ function SortProducts() {
                         <div key={record.id} className="wrapp-product">
                             <Link className='link-product' to={"/category/"+record.id}>
                                 <img src={"../"+record.img}/>
+                                <div className={record.sale?'sale':'disapear'}>Promocja</div>
                                 <h3>{record.name}</h3>
                                 <p>{record.description}</p>
-                                <p className='price-product'>{record.price.toFixed(2)}zł</p>
+                                <p className={record.sale?'price-cross':'price-product'}>{record.price.toFixed(2)}zł</p>
+                                <p className={record.sale?'price-cut':'disapear'}>{(record.price-record.cut).toFixed(2)}zł</p>
                             </Link>
-                            <button>dodaj do koszyka</button>
+                            <button
+                            onClick={()=>{
+                                dispatch(increment(record.sale?record.price-record.sale:record.price))
+                                dispatch(commission(record.id))
+                                }}>dodaj do koszyka</button>
                         </div>
                     
             )

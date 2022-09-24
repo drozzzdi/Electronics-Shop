@@ -24,6 +24,19 @@
   margin: 10px 0;
 }
 
+.smartphone-container .wrapp-smartphone .flex .img-smartphone .price-cross {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.smartphone-container .wrapp-smartphone .flex .img-smartphone .price-cut {
+  color: green;
+}
+
+.smartphone-container .wrapp-smartphone .flex .img-smartphone .disapear {
+  display: none;
+}
+
 .smartphone-container .wrapp-smartphone .flex .img-smartphone button {
   cursor: pointer;
   background-color: black;
