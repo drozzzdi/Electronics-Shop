@@ -24,7 +24,7 @@ function Searcher() {
 
   return (
     <header className='header-container'>
-        <Link className='textdecor' to={"/"} onClick={()=>dispatch(active(0))}>
+        <Link className='textdecor' to={"/:home"} onClick={()=>dispatch(active(0))}>
              <div className='logo'>
                  <h1>media <span>store</span></h1>
                  <div className='logo-yellow-wrapper'>

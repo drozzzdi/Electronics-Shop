@@ -6,7 +6,7 @@
         "category": "samsung",
         "price": 949.00,
         "description":"Najwyższa szybkość! Samsung Galaxy M23 5G jest gotowy, by działać w sieci najnowszej generacji.",
-        "img": "image/samsung-Galaxy-M23.jpg"
+        "img": "Electronics-Shop/image/samsung-Galaxy-M23.jpg"
     },
     {
         "id": 1,
@@ -14,7 +14,7 @@
         "category": "iphone",
         "price": 4999.00,
         "description":"Innowacyjny system dwóch aparatów został zaaranżowany na nowo, przesuwając obiektywy o 45 stopni. ",
-        "img": "image/iPhone-13-Mini.jpg",
+        "img": "Electronics-Shop/image/iPhone-13-Mini.jpg",
         "sale":true,
         "cut":200
     },
@@ -24,7 +24,7 @@
         "category": "samsung",
         "price": 8399.00,
         "description":"Galaxy Z Fold4 wyróżnia się wyglądem klasy premium. Nie sposób przejść obok niego obojętnie.",
-        "img": "image/samsung-Galaxy-Z-Fold.jpg"
+        "img": "Electronics-Shop/image/samsung-Galaxy-Z-Fold.jpg"
     },
     {
         "id": 3,
@@ -32,7 +32,7 @@
         "category": "huawei",
         "price": 1099.00,
         "description":"Smartfon HUAWEI nova Y90 to smartfon, w którym technologia przenika się z elegancją.",
-        "img": "image/HUAWEI-Nova-Y90.jpg"
+        "img": "Electronics-Shop/image/HUAWEI-Nova-Y90.jpg"
     },
     {
         "id": 4,
@@ -40,7 +40,7 @@
         "category": "iphone",
         "price": 3699.00,
         "description":"A14 Bionic, najszybszy czip znany smartfonom. Wyświetlacz OLED po same krawędzie. I tryb nocny we wszystkich aparatach.",
-        "img": "image/iPhone-12.jpg",
+        "img": "Electronics-Shop/image/iPhone-12.jpg",
         "sale":true,
         "cut":200
     },
@@ -50,7 +50,7 @@
         "category": "samsung",
         "price": 5149.00,
         "description":"Doświadcz niezwykle wciągających wrażeń na ekranie głównym o przekątnej 6,7 cala*.",
-        "img": "image/samsung-Galaxy-Z-FLIP.jpg",
+        "img": "Electronics-Shop/image/samsung-Galaxy-Z-FLIP.jpg",
         "sale":true,
         "cut":200
     },
@@ -60,7 +60,7 @@
         "category": "xiaomi",
         "price": 1599.00,
         "description":"Procesor Qualcomm Snapdragon 778G zapewni Ci niesamowicie szybkie działanie smartfona.",
-        "img": "image/XIAOMI-11-Lite.jpg"
+        "img": "Electronics-Shop/image/XIAOMI-11-Lite.jpg"
     },
     {
         "id": 7,
@@ -68,7 +68,7 @@
         "category": "huawei",
         "price": 4499.00,
         "description":"Seria HUAWEI P od momentu powstania stanowi idealne połączenie technologii, estetyki i inteligentnej fotografii.",
-        "img": "image/HUAWEI-P50-Pro.jpg",
+        "img": "Electronics-Shop/image/HUAWEI-P50-Pro.jpg",
         "sale":true,
         "cut":200
     },
@@ -78,7 +78,7 @@
         "category": "xiaomi",
         "price": 1249.00,
         "description":"Poznaj smartfon Redmi Note 10 Pro, oglądaj filmy na ekranie AMOLED i rób zdjęcia jednym z pięciu dostępnych aparatów.",
-        "img": "image/XIAOMI-Redmi-Note-10.jpg"
+        "img": "Electronics-Shop/image/XIAOMI-Redmi-Note-10.jpg"
     },
     {
         "id": 9,
@@ -86,7 +86,7 @@
         "category": "huawei",
         "price": 5427.00,
         "description":"Seria HUAWEI P została zaprojektowana w oparciu o połączenie estetyki i inteligentnej fotografii.",
-        "img": "image/HUAWEI-P50-Pocket.jpg",
+        "img": "Electronics-Shop/image/HUAWEI-P50-Pocket.jpg",
         "sale": true,
         "cut":200
     },
@@ -96,7 +96,7 @@
         "category": "iphone",
         "price": 5649.00,
         "description":"W iPhone 13 Pro Max radykalnie poszerzono możliwości aparatów, zarówno fotograficzne, jak i filmowe.",
-        "img": "image/iphon-13-pro.jpg"
+        "img": "Electronics-Shop/image/iphon-13-pro.jpg"
     },
     {
         "id": 11,
@@ -104,6 +104,6 @@
         "category": "xiaomi",
         "price": 489.00,
         "description":"Redmi 9A wyposażono w funkcje, które pozwolą Ci w pełni zanurzyć się w wirtualnym świecie.",
-        "img": "image/XIAOMI-Redmi-9A.jpg"
+        "img": "Electronics-Shop/image/XIAOMI-Redmi-9A.jpg"
     }
 ]

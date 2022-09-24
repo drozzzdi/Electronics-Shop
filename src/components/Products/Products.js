@@ -15,7 +15,7 @@ function Products() {
         return(
           <div key={record.id} className="wrapp-product">
             <Link className='link-product' to={"/category/"+record.id}>
-            <img src={'../../../public/'+record.img}/>
+            <img src={record.img}/>
             <div className={record.sale?'sale':'disapear'}>Promocja</div>
             <h3>{record.name}</h3>
             <p>{record.description}</p>
