@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Pages from './pages/Pages';
 import Searcher from './components/Searcher/Searcher';
 import Category from './components/Category/Category'; 
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Searcher/>
         <Category/>
         <Pages/>
+        <Footer/>
        </BrowserRouter>
       
     </div>

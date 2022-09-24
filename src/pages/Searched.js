@@ -36,8 +36,8 @@ function Searched() {
                                 <p className={record.sale?'price-cut':'disapear'}>{(record.price-record.cut).toFixed(2)}zł</p>
                             </Link>
                             <button onClick={()=>{
-                            dispatch(increment(record.sale?record.price-record.sale:record.price))
-                            dispatch(commission(record.id))
+                                dispatch(increment(record.sale?record.price-record.sale:record.price))
+                                dispatch(commission(record.id))
                             }}>dodaj do koszyka</button>
                         </div>
                 )
