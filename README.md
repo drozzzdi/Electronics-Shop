@@ -1,8 +1,8 @@
 # Online electronics store
 See [DEMO](https://drozzzdi.github.io/Electronics-Shop/)\
-The website contains a product search engine,\ 
-navigation searching for products by brand,\ 
-the possibility of adding products to the basket.
+The website contains a product search engine,\
+navigation searching for products by brand,\
+the possibility of adding products to the basket.\
 
 ## Tech stack
 
