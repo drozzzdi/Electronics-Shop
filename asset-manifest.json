@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Electronics-Shop/static/css/main.75ac9917.css",
+    "main.js": "/Electronics-Shop/static/js/main.9914f4b5.js",
+    "static/js/787.23170c61.chunk.js": "/Electronics-Shop/static/js/787.23170c61.chunk.js",
+    "index.html": "/Electronics-Shop/index.html",
+    "main.75ac9917.css.map": "/Electronics-Shop/static/css/main.75ac9917.css.map",
+    "main.9914f4b5.js.map": "/Electronics-Shop/static/js/main.9914f4b5.js.map",
+    "787.23170c61.chunk.js.map": "/Electronics-Shop/static/js/787.23170c61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75ac9917.css",
+    "static/js/main.9914f4b5.js"
+  ]
+}
