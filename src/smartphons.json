@@ -97,13 +97,5 @@
         "price": 5649.00,
         "description":"W iPhone 13 Pro Max radykalnie poszerzono możliwości aparatów, zarówno fotograficzne, jak i filmowe.",
         "img": "Electronics-Shop/image/iphon-13-pro.jpg"
-    },
-    {
-        "id": 11,
-        "name": "Huawei Nova Y90",
-        "category": "huawei",
-        "price": 1099.00,
-        "description":"Smartfon HUAWEI nova Y90 to smartfon, w którym technologia przenika się z elegancją.",
-        "img": "Electronics-Shop/image/HUAWEI-Nova-Y90.jpg"
     }
 ]
