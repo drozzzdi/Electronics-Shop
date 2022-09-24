@@ -1,13 +1,13 @@
 # Online electronics store
-
-The website contains a product search engine,\ 
-navigation searching for products by brand,\ 
-the possibility of adding products to the basket.
+See [DEMO](https://drozzzdi.github.io/Electronics-Shop/)\
+The website contains a product search engine,\
+navigation searching for products by brand,\
+the possibility of adding products to the basket.\
 
 ## Tech stack
 
 HTML,\
-Css,\
+Scss,\
 React,\
 React Router,\
 Redux,\
