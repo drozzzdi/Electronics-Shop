@@ -7,7 +7,7 @@ the possibility of adding products to the basket.\
 ## Tech stack
 
 HTML,\
-Css,\
+Scss,\
 React,\
 React Router,\
 Redux,\
